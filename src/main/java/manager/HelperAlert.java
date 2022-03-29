@@ -9,12 +9,14 @@ public class HelperAlert extends HelperBase{
     }
 
     public void selectItemAlert() {
+        hideFooter();
+        hideAds();
         click(By.xpath("//div/h5[.='Alerts, Frame & Windows']"));
 
     }
 
     public void selectAlerts() {
-        hideAds();
+
         hideFooter();
         click(By.xpath("//span[text()='Alerts']"));
     }
