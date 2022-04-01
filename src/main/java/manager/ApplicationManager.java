@@ -11,6 +11,7 @@ public class ApplicationManager {
     HelperAlert alert;
     HelperWindows windows;
     HelperSelect select;
+    HelperJS js;
 
 
 
@@ -23,6 +24,7 @@ public class ApplicationManager {
         alert = new HelperAlert(wd);
         windows = new HelperWindows(wd);
         select= new HelperSelect(wd);
+        js = new HelperJS(wd);
 
 
     }
@@ -40,5 +42,9 @@ public class ApplicationManager {
 
     public HelperSelect select() {
         return select;
+    }
+
+    public HelperJS js() {
+        return js;
     }
 }

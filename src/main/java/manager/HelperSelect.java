@@ -60,4 +60,21 @@ String locator = "//*[text()='" +salutation+"']";
 
 
     }
+
+    public void selectGroupOption(String option) {
+        pause(1000);
+        wd.findElement(By.id("withOptGroup")).click();
+
+        pause(1000);
+        //Group 1, option 1
+        String locator1 = "//*[text()='Group 1, option 1']";
+        String locator= "//*[text()='" +option+"']";
+
+        String locator3 = String.format("//*[text()='%s']",option);
+
+      // "lolo@mail.com" ---> "lolo"+index+"mail.com"-->lolo123@mail.com lolo456@mail.com
+
+        wd.findElement(By.xpath(locator3)).click();
+
+    }
 }
