@@ -14,7 +14,7 @@ public class JSTests extends TestBase{
     @Test
     public void textBoxJS(){
 
-        app.js().typeJS("John","john@mail.com");
-        app.js().clickBtnJS();
+       app.js().typeJS("John","john@mail.com");
+      app.js().clickBtnJS();
     }
 }
